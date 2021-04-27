@@ -65,6 +65,10 @@ a {
 }
 
 .bubble:hover {
+  width: 130px;
+  height: 130px;
+  top: -115px;
+  right: 20px;
   background-image: url(assets/home-icon.png);
 }
 

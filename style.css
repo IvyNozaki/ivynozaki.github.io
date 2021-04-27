@@ -31,7 +31,6 @@ body {
 a {
   text-decoration: none;
   font-weight: bold;
-  color: white;
 }
 
 /******************/
@@ -82,10 +81,11 @@ a {
 .greetings {
   z-index: 2;
   position: absolute;
-  width: 15em;
+  width: 700px;
+  height: 1em;
   text-align: center;
   font-size: 3em;
-  padding: 2em;
+  padding: 1em;
   padding-top: 200px;
   color: white;
   transition: all 1s;
@@ -106,9 +106,10 @@ a {
     opacity: 0;
   }
   100% {
+    z-index: 6;
     opacity: 1;
     top: 1300px;
-    left: 350px;
+    left: calc(35% - 350px);
   }
 }
 
@@ -116,6 +117,7 @@ a {
 /* MOON */
 /********/
 .moon-container {
+  z-index: 1;
   width: 100%;
   position: absolute;
   top: 0;
@@ -123,7 +125,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
+
   transition: all 1s;
   animation: movemoon 0.5s forwards;
   animation-play-state: paused;
@@ -410,15 +412,53 @@ a {
   color: white;
 }
 
+.white-icons {
+  width: 50px;
+  height: 50px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 10px;
+  margin-left: 60px;
+  color: transparent;
+}
+
+.bio-links {
+  color: transparent;
+  border-left: 60px solid transparent;
+}
+.bio-links:hover {
+  color: white;
+  border-left: 60px solid transparent;
+}
+
+.linkedin-icon-white {
+  background-image: url(assets/linkedin-icon-white.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.github-icon-white {
+  background-image: url(assets/github-icon-white.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.email-icon-white {
+  background-image: url(assets/email-icon-white.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 /*****************/
 /* YOUTUBE VIDEO */
 /*****************/
 iframe {
   z-index: 5;
-  width: 560px;
-  height: 315px;
-  left: 50px;
-  top: 50px;
+  width: 630px;
+  height: 385px;
+  left: 10px;
+  top: 100px;
   position: absolute;
   border-radius: 25px;
 }
@@ -460,6 +500,7 @@ iframe {
   position: absolute;
   display: flex;
   align-items: center;
+  color: white;
 }
 
 .proj-title {
@@ -472,6 +513,10 @@ iframe {
   color: white;
   top: 0px;
   left: 430px;
+}
+
+.view-proj {
+  color: white;
 }
 
 .pacman {
