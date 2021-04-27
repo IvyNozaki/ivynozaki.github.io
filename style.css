@@ -1,0 +1,631 @@
+/*****************/
+/* MAIN PAGE CSS */
+/*****************/
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 500vh;
+  background: rgb(215, 234, 254);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+/******************/
+/* MAIN CONTAINER */
+/******************/
+.bg-container {
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/mainpage.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hello-world {
+  /* border: 10px solid white; */
+  z-index: 6;
+  left: calc(50% - 400px);
+  top: 0;
+  position: absolute;
+  width: 800px;
+  text-align: center;
+  font-size: 150px;
+  font-weight: 900;
+  margin-top: 300px;
+  color: white;
+
+  transition: all 1s;
+  animation: helloworld 0.25s forwards;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes helloworld {
+  100% {
+    opacity: 0;
+    top: 300px;
+    left: 50px;
+  }
+}
+
+/********/
+/* NAME */
+/********/
+.greetings {
+  z-index: 2;
+  position: absolute;
+  width: 15em;
+  text-align: center;
+  font-size: 3em;
+  padding: 2em;
+  padding-top: 200px;
+  color: white;
+  transition: all 1s;
+  animation: movename 0.5s forwards;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1.5s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes movename {
+  0% {
+    opacity: 0;
+    top: 0;
+    left: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    top: 1300px;
+    left: 350px;
+  }
+}
+
+/********/
+/* MOON */
+/********/
+.moon-container {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  padding: 3.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transition: all 1s;
+  animation: movemoon 0.5s forwards;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes movemoon {
+  0% {
+    top: 0px;
+    left: 0px;
+  }
+  100% {
+    top: 1300px;
+    left: -200px;
+  }
+}
+
+#moon {
+  width: 20em;
+  height: 20em;
+  background-image: url("assets/darkmoon.svg");
+  background-size: cover;
+  background-color: transparent;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+#selfie {
+  width: 20.5em;
+  height: 20.5em;
+  position: absolute;
+  background-image: url("assets/selfie.png");
+  background-size: cover;
+  background-color: transparent;
+  border-radius: 50%;
+  z-index: 2;
+  opacity: 0;
+  transition: all 1s;
+  animation: changemoon 0.55s forwards;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes changemoon {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/**********/
+/* CLOUDS */
+/**********/
+.cloud-container {
+  width: 100%;
+  z-index: 2;
+}
+
+.left-clouds {
+  position: absolute;
+}
+
+.left-1 {
+  width: 700px;
+  height: 250px;
+  top: 30px;
+  left: 0px;
+  background-image: url(assets/left-1.svg);
+  background-size: cover;
+  background-color: transparent;
+  transition: all 1s ease-in-out;
+  animation: moveL1cloud 0.4s forwards;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes moveL1cloud {
+  0% {
+    left: 0px;
+  }
+  100% {
+    top: 800px;
+    left: -50px;
+    opacity: 0.85;
+  }
+}
+
+.left-2 {
+  width: 700px;
+  height: 250px;
+  top: 80px;
+  left: 100px;
+  background-image: url(assets/left-2.svg);
+  background-size: cover;
+  background-color: transparent;
+  transition: all 1s ease-in-out;
+  animation: moveL2cloud 0.4s forwards;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes moveL2cloud {
+  0% {
+    left: 100px;
+  }
+  100% {
+    top: 1000px;
+    left: -100px;
+    opacity: 0.85;
+  }
+}
+
+.left-3 {
+  width: 700px;
+  height: 250px;
+  top: 150px;
+  left: 150px;
+  background-image: url(assets/left-3.svg);
+  background-size: cover;
+  background-color: transparent;
+  transition: all 1s ease-in-out;
+  animation: moveL3cloud 0.4s forwards;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes moveL3cloud {
+  0% {
+    left: 150px;
+  }
+  100% {
+    top: 1100px;
+    left: 50px;
+    opacity: 0.85;
+  }
+}
+
+.right-clouds {
+  position: absolute;
+}
+
+.right-1 {
+  width: 750px;
+  height: 250px;
+  top: 10px;
+  right: 0px;
+  background-image: url(assets/right-1.svg);
+  background-size: cover;
+  background-color: transparent;
+  transition: all 1s ease-in-out;
+  animation: moveR1cloud 0.45s forwards;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes moveR1cloud {
+  0% {
+    right: 0px;
+  }
+  100% {
+    top: 800px;
+    width: 450px;
+    height: 150px;
+  }
+}
+
+.right-2 {
+  width: 740px;
+  height: 270px;
+  top: 50px;
+  right: 50px;
+  background-image: url(assets/right-2.svg);
+  background-size: cover;
+  background-color: transparent;
+  transition: all 1s ease-in-out;
+  animation: moveR2cloud 0.45s forwards;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes moveR2cloud {
+  0% {
+    right: 50px;
+  }
+  100% {
+    top: 1200px;
+    width: 450px;
+    height: 170px;
+    opacity: 0.8;
+  }
+}
+
+.right-3 {
+  width: 650px;
+  height: 290px;
+  top: 100px;
+  right: 150px;
+  background-image: url(assets/right-3.svg);
+  background-size: cover;
+  background-color: transparent;
+  transition: all 1s ease-in-out;
+  animation: moveR3cloud 0.45s forwards;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes moveR3cloud {
+  0% {
+    right: 150px;
+  }
+  100% {
+    top: 1350px;
+    right: 0px;
+    width: 650px;
+    height: 300px;
+  }
+}
+
+.center-cloud {
+  z-index: 5;
+  width: 770px;
+  height: 250px;
+  top: 160px;
+  left: calc(50% - 385px);
+  position: absolute;
+  background-image: url(assets/center.svg);
+  background-size: cover;
+  background-color: transparent;
+  transition: all 1s;
+  animation: movecentercloud 0.4s forwards;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes movecentercloud {
+  100% {
+    top: 1460px;
+    left: -25%;
+    opacity: 0.7;
+  }
+}
+
+/************/
+/* ABOUT ME */
+/************/
+.bio-container {
+  left: calc(50% - 650px);
+  top: 1650px;
+  width: 1300px;
+  height: 450px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+
+.bio {
+  z-index: 1;
+  position: absolute;
+  width: 500px;
+  right: 100px;
+  top: 5px;
+  font-size: 25px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+}
+
+/*****************/
+/* YOUTUBE VIDEO */
+/*****************/
+iframe {
+  z-index: 5;
+  width: 560px;
+  height: 315px;
+  left: 50px;
+  top: 50px;
+  position: absolute;
+  border-radius: 25px;
+}
+
+/**********/
+/* AVATAR */
+/**********/
+.flying-avatar {
+  z-index: 2;
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  width: 200px;
+  height: 260px;
+  background-image: url("assets/jetpackgirl-Left-smile.svg");
+  background-size: cover;
+  background-color: transparent;
+  animation: mymove 3s infinite;
+}
+
+@keyframes mymove {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 20px;
+  }
+}
+
+/************/
+/* PROJECTS */
+/************/
+#proj-container {
+  z-index: 1;
+  width: 1300px;
+  height: 800px;
+  left: calc(50% - 650px);
+  top: 2500px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+
+.proj-title {
+  width: 8em;
+  height: 4em;
+  position: absolute;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 3.5em;
+  font-weight: bolder;
+  color: white;
+  top: 0px;
+  left: 430px;
+}
+
+.pacman {
+  width: 250px;
+  height: 330px;
+  background-image: url(assets/balloonpink.svg);
+  background-size: cover;
+  position: absolute;
+  top: 50px;
+  right: 100px;
+  animation: floatpac 3s infinite;
+}
+
+@keyframes floatpac {
+  0% {
+    top: 50;
+  }
+  50% {
+    top: 70px;
+  }
+}
+
+.eyes {
+  width: 250px;
+  height: 330px;
+  background-image: url(assets/balloonpeach.svg);
+  background-size: cover;
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  animation: floateyes 3s infinite;
+}
+
+@keyframes floateyes {
+  0% {
+    top: 100;
+  }
+  50% {
+    top: 120px;
+  }
+}
+
+.bus {
+  width: 250px;
+  height: 330px;
+  background-image: url(assets/balloonblue.svg);
+  background-size: cover;
+  position: absolute;
+  top: 250px;
+  left: 450px;
+  animation: floatbus 3s infinite;
+}
+
+@keyframes floatbus {
+  0% {
+    top: 250;
+  }
+  50% {
+    top: 270px;
+  }
+}
+
+img {
+  position: absolute;
+  top: 330px;
+  left: 60px;
+  width: 150px;
+  height: 100px;
+}
+
+/***********/
+/* CONTACT */
+/***********/
+#contact-section {
+  width: 150px;
+  height: 150px;
+  right: 0px;
+  bottom: 250px;
+  position: fixed;
+  background-image: url("assets/thought.png");
+  background-size: cover;
+  background-color: transparent;
+  color: transparent;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  animation: thoughts 3s infinite;
+  cursor: pointer;
+  /* border: 1px solid white; */
+}
+
+@keyframes thoughts {
+  0% {
+    bottom: 250;
+  }
+  50% {
+    bottom: 270px;
+  }
+}
+
+#contact {
+  z-index: 7;
+  width: 90px;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  top: 50px;
+  right: 0px;
+  position: absolute;
+}
+
+.contact-info {
+  display: none;
+}
+
+.linkedin,
+.email,
+.github,
+.projects {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  left: 120px;
+  cursor: pointer;
+}
+
+.linkedin {
+  top: 100px;
+}
+
+.email {
+  top: 170px;
+}
+
+.github {
+  top: 240px;
+}
+
+.projects {
+  top: 310px;
+}
+
+.exit {
+  z-index: 7;
+  background: url("assets/exit-button.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: none;
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  right: 100px;
+  bottom: 300px;
+  cursor: pointer;
+  /* border: 1px solid white; */
+}

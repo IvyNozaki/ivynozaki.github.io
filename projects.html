@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/svg_avatar.svg">
+    <link rel="stylesheet" href="projects.css">
+    <title> Ivy Nozaki - Projects </title>
+</head>
+
+<body id="proj-page">
+    <div class="greetings">
+        <h1>Projects</h1>
+        <p>by Ivy Nozaki</p>
+    </div>
+
+
+    <div id="pacman-section">
+    
+        <div class="cloud left proj-pacman" onmouseover="speakNow()" onmouseout="justSmile()">
+
+            <p>Project: PacMen Exercise</p>
+
+            <div class="project pacman" onmouseover="givePacmanInfo()" onmouseout="hidePacmanInfo()">
+
+                <a href="https://github.com/IvyNozaki/PacMenExercise">
+                    <div class="github-icon"></div>
+                </a>
+
+                <div id="proj-pacman" class="pacman-info"><b><u>PacMen Exercise</u></b>
+                    <br></br>In this project I created an interactive game which the main objective is to eat as many pellets as you can while Pacman moves in a random path within the game screen. <br></br>
+                     This project was created using HTML, CSS and JavaScript with the focus on recursions, setTimeouts and click events.
+                </div>
+
+            </div>
+        </div>  
+    </div>
+    
+    <div id="eyes-section">
+    
+        <div class="cloud right proj-eyes" onmouseover="speakNow()" onmouseout="justSmile()">
+
+            <p>Project: Eye Exercise</p>
+
+            <div class="project eyes" onmouseover="giveEyesInfo()" onmouseout="hideEyesInfo()">
+
+                <a href="https://github.com/IvyNozaki/EyeExercise">
+                    <div class="github-icon"></div>
+                </a>
+
+                <div class="eyes-info"><b><u>Eye Exercise</u></b>
+                    <br></br>In this project I created an interactive creature with eyes that follow the mouse's movements. When mouse is over the eye(s), it will turn pink and close and result in a frown. It will return back to normal 2.5secs after the mouse has moved off the affected eye(s).  <br></br>
+                    This project was created using HTML, CSS and JavaScript with the focus on SVG manipulation, setTimeouts and mouse events.
+               </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="bus-section">
+        <div id="last-cloud" class="cloud left proj-bus"  onmouseover="speakNow()" onmouseout="justSmile()">
+
+            <p>Project: Real Time Bus Tracker</p>
+        
+            <div class="project bus" onmouseover="giveBusInfo()" onmouseout="hideBusInfo()">
+
+                <a href="https://github.com/IvyNozaki/RealTimeBusTracker">
+                    <div class="github-icon"></div>
+                </a>
+
+                <div class="bus-info">
+                    <b><u>Real Time Bus Tracker</u></b>
+
+                    <br></br>In this project I created an interactive map of Honolulu, Hawaii. There are buttons that show a bus route from the mall to the state capital and another to move the bus marker along the route.  <br></br>
+                    This project was created using mapbox, HTML, CSS and JavaScript with the focus on external APIs, SVG manipulation, setTimeouts and mouse events.
+               </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- AVATAR -->
+    <div id="avatar-container" onhover="speak()">
+        <a href="index.html"><div class="bubble"></div></a>
+        <div id="avatar-girl" class="smile"></div>
+    </div>
+    
+    <script src="projects.js">
+    </script>
+
+</body>
+
+</html>

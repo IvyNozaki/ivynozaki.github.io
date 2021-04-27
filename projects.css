@@ -1,0 +1,295 @@
+/*****************/
+/* PROJ PAGE CSS */
+/*****************/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(215, 234, 254);
+  background-position: center;
+  background-size: cover;
+}
+
+.greetings {
+  z-index: 5;
+  height: 150px;
+  text-align: center;
+  font-size: 70px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+p {
+  text-align: center;
+  font-size: 35px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+a {
+  text-align: center;
+  padding-right: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+#proj-page {
+  width: 100%;
+  height: 3000px;
+  background-image: url(assets/projspage.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/**********/
+/* AVATAR */
+/**********/
+#avatar-container {
+  z-index: 1;
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  width: 200px;
+  height: 200px;
+  background-image: url("assets/jetpackgirl-Left-smile.svg");
+  background-size: cover;
+}
+
+.bubble {
+  width: 70px;
+  height: 70px;
+  background-image: url(assets/thought.png);
+  background-size: cover;
+  position: absolute;
+  top: -75px;
+  right: 40px;
+}
+
+.bubble:hover {
+  background-image: url(assets/home-icon.png);
+}
+
+#avatar-girl {
+  z-index: 2;
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  width: 200px;
+  height: 200px;
+  background-image: url("assets/jetpackgirl-Left-focus.svg");
+  background-size: cover;
+  display: none;
+}
+
+/**********/
+/* CLOUDS */
+/**********/
+.cloud {
+  width: 550px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  background: #f2f9fe;
+  background: linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+  background: -webkit-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+  background: -moz-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+  background: -ms-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+  background: -o-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+
+  align-items: center;
+}
+
+.cloud:after,
+.cloud:before {
+  content: "";
+  position: absolute;
+  background: #f2f9fe;
+  z-index: -1;
+}
+
+.cloud:after {
+  width: 200px;
+  height: 200px;
+  top: -90px;
+  left: 70px;
+
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+}
+
+.cloud:before {
+  width: 300px;
+  height: 300px;
+  top: -130px;
+  right: 70px;
+  border-radius: 200px;
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+}
+
+.right {
+  left: 225px;
+  position: relative;
+  margin: 500px auto 20px;
+}
+
+.left {
+  right: 225px;
+  position: relative;
+  margin: 500px auto 20px;
+}
+
+#last-cloud {
+  margin-bottom: 900px;
+}
+
+/************/
+/* PROJECTS */
+/************/
+
+.project {
+  width: 210px;
+  height: 110px;
+  background-size: cover;
+}
+
+#pacman-section {
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  top: 750px;
+}
+
+.proj-pacman {
+  position: absolute;
+  left: -300px;
+  top: -330px;
+}
+
+.pacman {
+  background-image: url("project-refs/pacman.png");
+  border-radius: 10%;
+  border: 5px solid grey;
+}
+
+.pacman:hover {
+  width: 600px;
+  height: 400px;
+  background-image: url("project-refs/pacman.gif");
+  position: absolute;
+  align-self: center;
+}
+
+.pacman-info {
+  z-index: 2;
+  width: 400px;
+  height: 500px;
+  background: white;
+  position: absolute;
+  left: 650px;
+  top: -120px;
+  display: none;
+  font-size: 1.5em;
+  line-height: 1.25em;
+  padding: 2em;
+  border-radius: 25px;
+}
+
+#eyes-section {
+  width: 100%;
+  height: 700px;
+  position: absolute;
+  top: 1450px;
+}
+
+.github-icon {
+  z-index: 2;
+  width: 100px;
+  height: 100px;
+  background-image: url(assets/github-icon.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: none;
+}
+
+.proj-eyes {
+  position: absolute;
+  right: -400px;
+  top: -330px;
+}
+
+.eyes {
+  background-image: url("project-refs/eyes.png");
+  border-radius: 20%;
+  border: 5px solid grey;
+}
+
+.eyes:hover {
+  width: 600px;
+  height: 400px;
+  background-image: url("project-refs/eyes.gif");
+  position: absolute;
+  align-self: center;
+}
+
+.eyes-info {
+  z-index: 2;
+  width: 400px;
+  height: 660px;
+  background: white;
+  position: absolute;
+  right: 650px;
+  top: -150px;
+  display: none;
+  font-size: 1.5em;
+  line-height: 1.25em;
+  padding: 2em;
+  border-radius: 25px;
+}
+
+#bus-section {
+  width: 100%;
+  height: 700px;
+  position: absolute;
+  top: 2250px;
+}
+
+.proj-bus {
+  position: absolute;
+  left: -400px;
+  top: -330px;
+}
+
+.bus {
+  background-image: url("project-refs/bus.png");
+  border-radius: 20%;
+  border: 5px solid grey;
+}
+
+.bus:hover {
+  width: 600px;
+  height: 400px;
+  background-image: url("project-refs/bus.gif");
+  position: absolute;
+  align-self: center;
+  border-radius: 5%;
+}
+
+.bus-info {
+  z-index: 2;
+  width: 400px;
+  height: 600px;
+  background: white;
+  position: absolute;
+  left: 650px;
+  top: -120px;
+  display: none;
+  font-size: 1.5em;
+  line-height: 1.25 em;
+  padding: 2em;
+  border-radius: 25px;
+}
