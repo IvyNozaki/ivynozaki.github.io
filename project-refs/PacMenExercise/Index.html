@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pacmen</title>
+    <link rel="icon" href="/project-refs/PacMenExercise/images/PacMan1.png" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="game-name">PACMAN: FEEDING FRENZY</div>
+    <div id="machine-area">
+      <div class="score-board">SCORE
+        <div id="score-count"></div>
+      </div>
+      <div class="bezel">
+        <div id="game">
+        </div>
+      </div>
+      <div class="neck"></div>
+      <div class="trapezoid">
+        <button class="btn-1" onclick="startGame()">START</button>
+        <button class="btn-2" onclick="endGame()">STOP</button>
+        <button class="btn-3" onclick="feedPacman()">EAT</button>
+      </div>
+      <div class="stand"></div>
+    </div>
+    
+    
+
+    <script src="pacmen.js"></script>
+  </body>
+</html>

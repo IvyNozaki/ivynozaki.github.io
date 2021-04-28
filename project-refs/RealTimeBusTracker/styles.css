@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.map-overlay {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+}
+
+button {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.5em;
+  border-radius: 10px;
+  border-color: #2b4829;
+  background-color: #f7f5bc;
+  color: #2b4829;
+  box-shadow: inset 6px 3px 1px rgba(68, 70, 15, 0.3);
+}
+
+button:hover,
+.resetBtn a:hover,
+.resetBtn:hover {
+  cursor: pointer;
+  color: #f7f5bc;
+  background: #2b4829;
+}
+
+.route {
+  width: 150px;
+  left: 20px;
+  top: 55px;
+  position: absolute;
+}
+
+.bus {
+  width: 150px;
+  left: 175px;
+  top: 55px;
+  position: absolute;
+}
+
+.resetBtn {
+  width: 150px;
+  left: 330px;
+  top: 55px;
+  position: absolute;
+}
+
+.resetBtn a {
+  text-decoration: none;
+  color: #2b4829;
+}
+
+.title {
+  width: 720px;
+  height: 50px;
+  left: 10px;
+  top: 0px;
+  position: absolute;
+  line-height: 1.5em;
+  text-align: center;
+  border: 2px solid #2b4829;
+  border-radius: 10px;
+  background-color: #f7f5bc;
+  color: #2b4829;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 2em;
+  box-shadow: inset 6px 3px 1px rgba(68, 70, 15, 0.3);
+}
+
+.marker {
+  border: 1px solid black;
+}
+
+.bus-icon {
+  z-index: 99;
+}

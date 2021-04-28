@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url("assets/brickwall.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.game-name {
+  z-index: 3;
+  top: 135px;
+  position: relative;
+  font-family: "Press Start 2P", cursive;
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 2px 2px #ffff00d7;
+}
+
+#machine-area {
+  width: 100%;
+  min-width: 50%;
+  height: 100vh;
+  /* border: 5px solid paleturquoise; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+}
+
+.bezel {
+  background: lightgray;
+  width: 70%;
+  height: 70%;
+  min-width: 1000px;
+  min-height: 500px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.score-board {
+  width: 60px;
+  height: 40px;
+  z-index: 6;
+  left: 400px;
+  top: -150px;
+  position: relative;
+  font-family: "Press Start 2P", cursive;
+  font-size: 10px;
+  text-align: center;
+  color: rgb(255, 255, 0);
+}
+
+#score-count {
+  width: 60px;
+  height: 40px;
+  z-index: 6;
+  position: relative;
+  top: 10px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 15px;
+  text-align: center;
+}
+
+.neck {
+  z-index: 1;
+  width: 70%;
+  height: 155px;
+  min-width: 1000px;
+  background: rgba(128, 128, 128, 0.071);
+  position: absolute;
+  bottom: 102px;
+}
+
+.stand {
+  height: 50px;
+  width: 72.8%;
+  min-width: 1040px;
+  bottom: 2px;
+  background: rgb(184, 184, 184);
+  position: absolute;
+}
+
+#game {
+  z-index: 5;
+  border: 1px solid darkblue;
+  background-color: navy;
+  border-radius: 10px;
+  width: 900px;
+  height: 400px;
+  position: relative;
+}
+
+.snack {
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background: gold;
+  position: absolute;
+  z-index: 1;
+}
+
+.pacman {
+  z-index: 2;
+}
+
+.trapezoid {
+  width: 70%;
+  height: 50px;
+  min-width: 1000px;
+  bottom: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: lightgray;
+  position: absolute;
+}
+
+.trapezoid:after,
+.trapezoid:before {
+  content: "";
+  position: absolute;
+  background: transparent;
+  z-index: 1;
+}
+
+.trapezoid:after {
+  width: 10%;
+  height: 0px;
+  top: 0px;
+  left: -20px;
+  border-left: 20px solid transparent;
+  border-bottom: 50px solid lightgray;
+}
+
+.trapezoid:before {
+  width: 10%;
+  height: 0px;
+  top: 0px;
+  right: -2%;
+  border-right: 20px solid transparent;
+  border-bottom: 50px solid lightgray;
+}
+
+button {
+  height: 40px;
+  width: 80px;
+  top: 40px;
+  z-index: 3;
+  margin: 0px 100px 100px;
+  position: relative;
+  font-family: "Press Start 2P";
+  font-size: 10px;
+  /* margin: 1rem; */
+  padding: 0.5rem;
+  background: grey;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+}
+
+button:active {
+  top: 50px;
+  box-shadow: 0 5px rgba(0, 0, 0, 0);
+}
+
+.btn-1 {
+  background: rgb(147, 230, 23);
+  border: 1px solid rgb(152, 237, 24);
+  box-shadow: 0 10px rgb(128, 196, 27), 0 5px rgb(128, 196, 27);
+}
+
+.btn-2 {
+  background: orangered;
+  border: 1px solid rgb(255, 91, 31);
+  box-shadow: 0 10px rgb(225, 60, 0), 0 5px rgb(225, 60, 0);
+}
+
+.btn-3 {
+  background: rgb(50, 101, 255);
+  border: 1px solid rgb(66, 113, 255);
+  box-shadow: 0 10px rgb(30, 76, 216), 0 5px rgb(30, 76, 216);
+}

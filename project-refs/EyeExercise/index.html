@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eye Movement</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="assets/side-eyed.png" />
+  </head>
+  <body>
+    <div class="charhead">
+      <div class="eyes">
+        <div id="left-lid" class="lids"></div>
+        <div
+          id="left-eye"
+          class="eye"
+          onmouseover="closeLeftLid()"
+          onmouseout="openLeftEye()"
+        >
+          <div class="ball"></div>
+        </div>
+
+        <div id="right-lid" class="lids"></div>
+        <div
+          id="right-eye"
+          class="eye"
+          onmouseover="closeRightLid()"
+          onmouseout="openRightEye()"
+        >
+          <div class="ball"></div>
+        </div>
+      </div>
+    </div>
+    <div id="mouth" class="happy"></div>
+
+    <script src="eyes.js"></script>
+  </body>
+</html>

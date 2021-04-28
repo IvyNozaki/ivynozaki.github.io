@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Real Bus Tracker</title>
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+    <link rel="icon" href="assets/BusIcon.svg" />
+  </head>
+
+  <body>
+    <div id="map"></div>
+    <div class="title">
+      Bus Route: &nbsp; Ala Moana Center - Hawaii State Capitol
+    </div>
+    <div class="map-overlay top">
+      <button class="route" onclick="showStops()">Show Route</button>
+      <button class="bus" onclick="move()">Take Bus</button>
+      <button class="resetBtn">
+        <a href="RealTimeBusTracker.html">Reset</a>
+      </button>
+    </div>
+    <script src="./mapanimation.js"></script>
+  </body>
+</html>
