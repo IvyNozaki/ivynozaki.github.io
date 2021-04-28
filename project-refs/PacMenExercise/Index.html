@@ -10,26 +10,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="game-name">PACMAN: FEEDING FRENZY</div>
-    <div id="machine-area">
-      <div class="score-board">SCORE
-        <div id="score-count"></div>
-      </div>
-      <div class="bezel">
-        <div id="game">
+    <!-- Monitor -->
+    <div class="bezel">
+      <div class="game-name">PACMAN: FEEDING FRENZY</div>
+      <div id="game">
+        <!-- Score Board -->
+        <div class="score-board">SCORE
+          <div id="score-count"></div>
         </div>
       </div>
-      <div class="neck"></div>
-      <div class="trapezoid">
-        <button class="btn-1" onclick="startGame()">START</button>
-        <button class="btn-2" onclick="endGame()">STOP</button>
-        <button class="btn-3" onclick="feedPacman()">EAT</button>
-      </div>
-      <div class="stand"></div>
     </div>
-    
-    
 
+    <!-- Console -->
+    <div class="neck"></div>
+    <div class="trapezoid">
+      <button class="btn-1" onclick="startGame()">START</button>
+      <button class="btn-2" onclick="endGame()">STOP</button>
+      <button class="btn-3" onclick="feedPacman()">EAT</button>
+    </div>
+
+    <!-- Stand -->
+    <div class="stand"></div>
+
+    <!-- Javascript -->
     <script src="pacmen.js"></script>
   </body>
 </html>

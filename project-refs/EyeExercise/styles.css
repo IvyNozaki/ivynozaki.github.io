@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   cursor: pointer;
 }
@@ -5,7 +9,20 @@ html {
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: 100vh;
   background: #14495e;
+}
+
+.charhead {
+  z-index: 1;
+  width: 800px;
+  height: 600px;
+  position: fixed;
+  bottom: 0%;
+  left: calc(50% - 400px);
+  background: rgb(231, 191, 88);
+  border-radius: 400px 400px 0px 0px;
 }
 
 .eyes {
@@ -15,6 +32,7 @@ body {
   width: 100%;
   text-align: center;
 }
+
 .eye {
   width: 240px;
   height: 120px;
@@ -128,37 +146,26 @@ body {
   border-radius: 50%;
 }
 
-.happy {
-  z-index: 5;
+/* MOUTH */
+
+.happy,
+.uncomfy {
+  z-index: 2;
   width: 500px;
   height: 200px;
-  top: 425px;
-  left: 450px;
+  bottom: 50px;
+  left: calc(50% - 250px);
   position: fixed;
+}
+
+.happy {
   background: url("assets/happy.svg");
   background-size: 900px 900px;
   background-position: center;
 }
 
 .uncomfy {
-  z-index: 5;
-  width: 500px;
-  height: 200px;
-  top: 425px;
-  left: 450px;
-  position: fixed;
   background: url("assets/uncomfortable.svg");
   background-size: 900px 900px;
   background-position: center;
-}
-
-.charhead {
-  z-index: 1;
-  width: 800px;
-  height: 600px;
-  position: fixed;
-  bottom: 0%;
-  left: 300px;
-  background: rgb(231, 191, 88);
-  border-radius: 400px 400px 0px 0px;
 }

@@ -9,55 +9,53 @@ body {
   background-position: center;
   background-size: cover;
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   width: 100%;
   height: 100vh;
   flex-direction: column;
 }
 
+#machine-area {
+  border: 10px solid blue;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bezel {
+  background: lightgray;
+  width: 100%;
+  height: 100%;
+  min-width: 1000px;
+  max-width: 1000px;
+  min-height: 500px;
+  max-height: 500px;
+  position: absolute;
+  bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
 .game-name {
-  z-index: 3;
-  top: 135px;
-  position: relative;
+  margin: 10px;
   font-family: "Press Start 2P", cursive;
   font-size: 30px;
   text-align: center;
   text-shadow: 2px 2px #ffff00d7;
 }
 
-#machine-area {
-  width: 100%;
-  min-width: 50%;
-  height: 100vh;
-  /* border: 5px solid paleturquoise; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  place-items: center;
-}
-
-.bezel {
-  background: lightgray;
-  width: 70%;
-  height: 70%;
-  min-width: 1000px;
-  min-height: 500px;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-}
-
 .score-board {
   width: 60px;
   height: 40px;
   z-index: 6;
-  left: 400px;
-  top: -150px;
-  position: relative;
+  right: 10px;
+  top: 10px;
+  position: absolute;
   font-family: "Press Start 2P", cursive;
   font-size: 10px;
   text-align: center;
@@ -86,10 +84,11 @@ body {
 }
 
 .stand {
-  height: 50px;
-  width: 72.8%;
+  height: 52px;
+  width: 100%;
   min-width: 1040px;
-  bottom: 2px;
+  max-width: 1040px;
+  bottom: 0px;
   background: rgb(184, 184, 184);
   position: absolute;
 }
@@ -119,9 +118,10 @@ body {
 }
 
 .trapezoid {
-  width: 70%;
+  width: 100%;
   height: 50px;
   min-width: 1000px;
+  max-width: 1000px;
   bottom: 52px;
   display: flex;
   justify-content: center;
