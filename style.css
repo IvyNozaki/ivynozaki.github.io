@@ -244,7 +244,7 @@ a {
   100% {
     top: 1000px;
     left: -100px;
-    opacity: 0.85;
+    opacity: 0.5;
   }
 }
 
@@ -271,7 +271,6 @@ a {
   100% {
     top: 1100px;
     left: 50px;
-    opacity: 0.85;
   }
 }
 
@@ -384,7 +383,7 @@ a {
   100% {
     top: 1460px;
     left: -25%;
-    opacity: 0.7;
+    opacity: 0.5;
   }
 }
 
@@ -461,6 +460,89 @@ iframe {
   top: 100px;
   position: absolute;
   border-radius: 25px;
+}
+
+/*****************/
+/* CLOUD BREAK 2 */
+/*****************/
+
+.cloud-container-2 {
+  width: 100%;
+  z-index: 2;
+}
+
+.left-clouds2 {
+  position: absolute;
+}
+
+.left-4 {
+  width: 600px;
+  height: 200px;
+  top: 2150px;
+  left: -100px;
+  opacity: 0.5;
+  background-image: url(assets/left-1.svg);
+  background-size: cover;
+  background-color: transparent;
+}
+
+.left-5 {
+  width: 700px;
+  height: 290px;
+  top: 2250px;
+  left: 100px;
+  opacity: 0.6;
+  background-image: url(assets/left-2.svg);
+  background-size: cover;
+  background-color: transparent;
+}
+
+.left-6 {
+  width: 700px;
+  height: 250px;
+  top: 2650px;
+  left: -150px;
+  opacity: 0.4;
+  background-image: url(assets/left-3.svg);
+  background-size: cover;
+  background-color: transparent;
+}
+
+.right-clouds2 {
+  position: absolute;
+}
+
+.right-4 {
+  width: 740px;
+  height: 270px;
+  top: 1950px;
+  right: 100px;
+  opacity: 0.3;
+  background-image: url(assets/right-1.svg);
+  background-size: cover;
+  background-color: transparent;
+  border: 1px solid greenyellow;
+}
+
+.right-5 {
+  width: 740px;
+  height: 270px;
+  top: 2050px;
+  right: 0px;
+  background-image: url(assets/right-2.svg);
+  background-size: cover;
+  background-color: transparent;
+}
+
+.right-6 {
+  width: 550px;
+  height: 250px;
+  top: 2400px;
+  right: 150px;
+  opacity: 0.3;
+  background-image: url(assets/right-3.svg);
+  background-size: cover;
+  background-color: transparent;
 }
 
 /**********/
@@ -582,7 +664,7 @@ iframe {
 img {
   position: absolute;
   top: 330px;
-  left: 60px;
+  left: 50px;
   width: 150px;
   height: 100px;
 }
