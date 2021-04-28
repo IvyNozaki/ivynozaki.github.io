@@ -18,7 +18,9 @@ You can hover over the icons to reveal my contact info.
 Below the bio section, there are balloons carrying an image of my projects. You can click on the "VIEW MY PROJECTS" to go straight to the projects page or click on the individual images to go straight to that portion of the projects page.
 
 **PROJECTS PAGE**
-My project page opens up on a partially cloudy sky. As you scroll down, you will see my projects have its own designated cloud. When hovering over the project cloud, my avatar becomes focused with her eyes open. Hovering over the project image will open up a short snippet of how the project looks in a gif form. It also opens up the info summary in the space next to the cloud. Hovering over the image also shows the GitHub icon which, on click, will take you to the GitHub repo.
+My project page opens up on a partially cloudy sky. As you scroll down, you will see my projects have its own designated cloud. When hovering over the project cloud, my avatar becomes focused with her eyes open. Hovering over the project image will open up a short snippet of how the project looks in a gif form. It also opens up the info summary in the space next to the cloud.
+
+- Hovering over the image also shows two black icons which, on click, will take you to their respective links. The GitHub icon will take you to the GitHub repo where as the play demo icon will take you to the live project.
 
 **NAVIGATION**
 There is an avatar on the bottom right corner in both the home and projects page. Above the avatar is a thought bubble with a "NAVIGATION" text inside. Clicking on the bubble will expand the bubble and show the navigation buttons.
